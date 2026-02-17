@@ -1,8 +1,8 @@
 // Exercício 1 - Tipos de Triângulos
 
-let A = prompt("Digite A:");
-let B = prompt("Digite B:");
-let C = prompt("Digite C:");
+let A = Number(prompt("Digite A:"));
+let B = Number(prompt("Digite B:"));
+let C = Number(prompt("Digite C:"));
 
 let maior, meio, menor;
 
@@ -40,20 +40,20 @@ B = meio;
 C = menor;
 
 if (A >= B + C) {
-console.log("NAO FORMA TRIANGULO");
+alert("NAO FORMA TRIANGULO");
 } else {
 if (A * A === B * B + C * C) {
-console.log("TRIANGULO RETANGULO");
+alert("TRIANGULO RETANGULO");
 } else if (A * A > B * B + C * C) {
-console.log("TRIANGULO OBTUSANGULO");
+alert("TRIANGULO OBTUSANGULO");
 } else {
-console.log("TRIANGULO ACUTANGULO");
+alert("TRIANGULO ACUTANGULO");
 }
 
 if (A === B && B === C) {
-console.log("TRIANGULO EQUILATERO");
+alert("TRIANGULO EQUILATERO");
 } else if (A === B || B === C || A === C) {
-console.log("TRIANGULO ISOSCELES");
+alert("TRIANGULO ISOSCELES");
 }
 }
 
@@ -69,7 +69,7 @@ pares++;
 }
 }
 
-console.log(pares + " valores pares");
+alert(pares + " valores pares");
 
 // Exercício 3 - Números Ímpares
 
@@ -77,6 +77,6 @@ let X = Number(prompt("Digite um número inteiro:"));
 
 for (let i = 1; i <= X; i++) {
 if (i % 2 !== 0) {
-console.log(i);
+alert(i);
 }
 }
